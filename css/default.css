@@ -1,0 +1,248 @@
+/*
+    Default Stylesheet, for non-mobile browsers.
+*/
+
+/* Close to official PVAMU logo font */
+@import url(http://fonts.googleapis.com/css?family=Podkova:400,700);
+
+/* jQuery tablesorter plugin */
+@import url(tablesorter.css);
+
+
+/** GENERAL **/
+body,
+html {
+    background: #fefefe;
+    color: #222;
+    font: normal 1em Arial, serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    background: #fefefe;
+    margin:0 auto -101px;
+    min-height: 100%;
+    min-width: 600px;
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.inner {
+    height: inherit;
+    margin: 0 auto;
+    max-width: 75em;
+    position: relative;
+    width: 80vw;
+}
+
+
+/** HEADER **/
+header {
+    background-image: linear-gradient(bottom, rgb(153,51,204) 8%, rgb(51,0,102) 71%);
+    background-image: -o-linear-gradient(bottom, rgb(153,51,204) 8%, rgb(51,0,102) 71%);
+    background-image: -moz-linear-gradient(bottom, rgb(153,51,204) 8%, rgb(51,0,102) 71%);
+    background-image: -webkit-linear-gradient(bottom, rgb(153,51,204) 8%, rgb(51,0,102) 71%);
+    background-image: -ms-linear-gradient(bottom, rgb(153,51,204) 8%, rgb(51,0,102) 71%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.08, rgb(153,51,204)), color-stop(0.71, rgb(51,0,102)));
+    color: #ffcc33;
+    margin: 0 auto;
+}
+
+header h1 {
+    font: normal small-caps 400 2em 'Podkova', serif;
+    margin: 0 0 0 16px;
+    text-shadow: 3px 2px 4px #960;
+}
+
+header h2 {
+    font: normal small-caps 400 1em 'Podkova', serif;
+    margin: 0 0 10px 56px;
+    text-shadow: 3px 2px 4px #960;
+}
+
+header #seal {
+    float: right;
+    height: 188px;
+    margin: -40px 0 0 0;
+}
+
+header a:link,
+header a:hover,
+header a:visited {
+    color: #ffcc33;
+    text-decoration: none;
+}
+
+
+/** Navigation **/
+nav {
+    background: #333;
+    color: white;
+    padding:5px 10px;
+    height: 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-item {
+    border-right: 1px solid;
+    cursor: pointer;
+    display: inline;
+    float: left;
+    margin: 0;
+    padding: 0 9px
+}
+
+.menu-item:last-child {
+    border: none;
+}
+
+.menu-item span {
+    padding: 8px;
+}
+
+.menu-item span:hover {
+    color: #FFF580;
+    text-decoration: none;
+}
+
+.menu-item ul {
+    display: none;
+}
+
+.menu-item:hover > .submenu {
+    display: block;
+    
+}
+
+
+.submenu {
+    background: #333;
+    margin: 0 0 0 -10px;
+    position: absolute;
+    width: 189px;
+    z-index: 100;
+}
+
+.submenu:hover {
+    display: block;
+    
+}
+
+.submenu li {
+    border: 1px solid;
+    border-top: none;
+    display: block;
+    float: none;
+    padding: 5px 0;
+}
+
+section {
+    margin: 0 auto 135px;
+    min-width:493px;
+}
+
+section .breadcrumb {
+    font-family: monospace;
+    margin: 1em 0 0 0;
+}
+
+section a:link {
+    color: #5366F3;
+    text-decoration: none;
+}
+
+section a:hover {
+    color: #A5ADEB;
+    text-decoration: underline;
+}
+
+#directory table{
+    border: 1px solid;
+    width: 100%;
+}
+
+#directory table th,
+#directory table td {
+    border: 1px solid;
+}
+
+#directory table td:nth-child(5) {
+    white-space: nowrap;
+}
+
+/** FOOTER **/
+footer {
+    background-image: linear-gradient(bottom, rgb(153,51,204) 100%, rgb(51,0,102) 25%);
+    background-image: -o-linear-gradient(bottom, rgb(153,51,204) 100%, rgb(51,0,102) 25%);
+    background-image: -moz-linear-gradient(bottom, rgb(153,51,204) 100%, rgb(51,0,102) 25%);
+    background-image: -webkit-linear-gradient(bottom, rgb(153,51,204) 100%, rgb(51,0,102) 25%);
+    background-image: -ms-linear-gradient(bottom, rgb(153,51,204) 100%, rgb(51,0,102) 25%);
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(1, rgb(153,51,204)), color-stop(0.25, rgb(51,0,102)));
+    clear: both;
+    color: #fefefe;
+    height: 91px;
+    margin: -26px auto 0;
+    padding: 5px 0;
+    position: relative;
+    min-width: 180px;
+    vertical-align: middle;
+}
+
+footer #footer-info {
+    float: left;
+    margin: 8px 0 0 0;
+    width: 400px;
+}
+
+footer p {
+    font-size: 0.75em;
+    line-height: 1.25;
+    margin: 0;
+}
+
+footer  .logo {
+    font: normal small-caps 400 1.5em 'Podkova', serif;
+    margin: 0 0 0 -10px;
+    text-shadow: .01em .01em 1px rgba(0, 0, 0, 0.5);
+}
+
+footer .logo a:link,
+footer .logo a:hover,
+footer .logo a:visited {
+    color: #ffcc33;
+    text-decoration: none;
+}
+
+footer a:link {
+    color: #fefefe;
+}
+footer a:visited {
+    color: #eee;
+}
+
+footer #tamus {
+    float: left;
+    margin: 0 10px 0 0;
+}
+
+footer #imagine {
+    position: absolute;
+    bottom: 10px;
+    height: 55px;
+    right: 0;
+}
+
+@media (max-width: 51.5625em) {
+    header #seal,
+    footer #imagine {
+        display: none;
+    }
+}
